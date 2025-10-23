@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laguna Techno Park</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    /* === NAVBAR === */
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #1e293b;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem;
+    }
+
+    /* === HOME === */
+    #home {
+      background: linear-gradient(120deg, #1e293b, #334155);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #home p {
+      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    /* === SECTION STYLES === */
+    section h2 {
+      color: #0f172a;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    section p {
+      max-width: 800px;
+      line-height: 1.7;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
+
+    .card {
+      background: #f1f5f9;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin: 1rem auto;
+      max-width: 900px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      background: #1e293b;
+      color: white;
+      padding: 1.5rem;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === NAVBAR === -->
+  <nav>
+    <div class="logo">Memoire de Aide </div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#significance">Significance</a></li>
+      <li><a href="#overall">Overall</a></li>
+    </ul>
+  </nav>
+
+  <!-- === HOME SECTION === -->
+  <section id="home">
+    <h1>Laguna Techno Park</h1>
+    <p>
+      Laguna Technopark is a large industrial park in the Philippines, developed by AyalaLand Logistics Holdings Corp. (ALLHC), that houses a variety of light to medium, non-polluting manufacturing and logistics companies. 
+    </p>
+    <img src="technopark.jpg" alt="Laguna Technopark">
+    <style>
+  .rounded-square {
+    width: 50px;         
+    height: 50px;
+    object-fit: cover;    
+    border-radius: 20px; 
+  }
+    </style>   
+  </section>
+
+  <!-- === HISTORY SECTION === -->
+  <section id="history">
+    <div class="card">
+    <h2>History of Laguna Technopark</h2>
+    <p> The AyalaLand Logistics Holdings Corp (ALLHC) Technoparks develops and manages dynamic industrial parks in the Philippines. Its pioneer development started in 1990 with Laguna Technopark. It has grown to cover 471 hectares across the cities of Biñan and Santa Rosa, 
+    It is one of the largest privately-owned industrial parks in the country based on the number of employment and revenues generated. </p>
+    </div>
+  </section>
+
+  <!-- === SIGNIFICANCE === -->
+  <section id="significance">
+    <h2>Significance</h2>
+    <div class="card">
+    <p>
+    Laguna Technopark is significant not just as an economic zone, but as a catalyst for national development—providing jobs, attracting investment, promoting sustainability, and fostering innovation in regional economies.
+    It is now home to more than 270 companies, generating over 100,000 jobs and contributing significantly to the CALABARZON region's economy.   
+    </p>
+    </div>
+  </section>
+
+  <!-- === IMPACT SECTION === -->
+  <section id="overall">
+    <h2>Overall</h2>
+    <div class="card">
+    <p>
+    Laguna Technopark stands as a testament to visionary industrial development in the Philippines. From its beginnings in 1990 as a 224-hectare project, it has grown into a 471-hectare hub that hosts over 270 companies and provides employment to more than 100,000 people. Spearheaded by Ayala Land, Mitsubishi Corporation, and Kawasaki Steel Corporation, and managed by AyalaLand Logistics Holdings Corp., it has become a cornerstone of economic progress in CALABARZON. 
+    As it continues to expand and evolve, Laguna Technopark exemplifies how sustainable, innovation-driven industrial parks can empower communities, support local and global businesses, and drive regional and national growth.
+    </p>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer>
+    <p>Created by <a href="#">Delacruz, Kandiess P. & Tanggote, Alyzza P.</a> | 2025 © 1.15 BSIT</p>
+  </footer>
+
+</body>
+</html>
